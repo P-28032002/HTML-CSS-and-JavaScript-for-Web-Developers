@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background : linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)),url(../images//glasses_background_img_1.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+   width: 60px;
+   height: 45px;
+   cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.banner .navbar ul li a:active{
+    color:  rgb(230, 99, 149);
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;;
+    width: 0;
+    background: rgb(230, 99, 149);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width:100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(230, 99, 149);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+button a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+span{
+    background: rgb(230, 99, 149);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition:0.5s;
+}
+button:hover::after span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.container{
+    max-width: 1170px;  
+    margin: auto;
+}
+
+.conatiner ul{
+    list-style: none;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #242624;
+    padding:70px 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li{
+    list-style-type: none;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.story h1,.intro h1{
+    font-size: 100;
+    font-family: cursive;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 0px auto;
+  }
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 50px;
+  }
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+    background: #2980b9;
+  }
+
+/*About US*/
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .glass1 img,.glass3 img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    
+  }
+  .glass2 img{
+    float: right;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+  }
+  .glass1,.glass2,.glass3{
+    width: 50%;
+    margin: 120px auto 120px auto;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .glass1 p,.glass2 p,.glass3 p{
+    font-size: 18px;
+    color: grey;
+    font-family: cursive;
+    font-weight: 50;
+
+  }
+
+  .foot{
+    background-color: #242624;
+    padding:70px 0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 250px; 
+}
+
+.features h1{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(17, 17, 17, 0.719);
+  
+}
+.features{
+  margin: 50px auto 20px auto;
+  text-align: center;
+}
+
+hr{
+  width: 40%;
+  height: 2px;
+  background-color: #e91e63;
+  margin-right: auto;  
+  margin-left: auto;  
+}
+
+a .active{
+  color: #e91e63;
+}
+
+.openMenu{
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar ul .closeMenu, .icons i{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.icons .fa-facebook-f:hover {color:mediumblue;}
+.icons .fa-instagram:hover {color: rgb(233, 12, 185);}
+.icons .fa-twitter:hover {color: blue;}
+.icons .fa-linkedin-in:hover {color: rgb(0, 217, 255);}
+.icons .fa-github:hover {color: rgba(0, 255, 106, 0.568);}
+
+.navbar .logo{
+  margin: 6px;
+  cursor: pointer;
+}
+@media(max-width: 800px){
+  .navbar .mainMenu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242624;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .navbar .mainMenu li a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+
+  }
+  .navbar .mainMenu .closeMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .navbar .openMenu{
+    display: block;
+  }
+  .navbar .mainMenu li a:hover{
+    background: none;
+    color: #e91e63;
+    font-size: 1.6rem;
+  }
+  .icons i{
+    display: inline-block;
+    padding: 12px;
+  }
+}
