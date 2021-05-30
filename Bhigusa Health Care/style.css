@@ -1,0 +1,151 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+    background-color: grey;
+}
+#back{
+    border-radius: 40px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+#circle {
+    border: 2px solid black;
+    position:relative;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    background: linear-gradient( -180deg, rgba(30, 114, 79, 0.842), rgba(30, 114, 79, 0.842) 85%,rgb(170, 134, 253) 15% ); 
+    display: inline-block;
+}
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 90px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 150px solid black;
+    background-color: transparent;
+}
+.triangle:before {
+    position: relative;
+    top: 20px;
+    left: 120px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid rgba(30, 114, 79, 0.842);
+    background-color: transparent;
+}
+#myCanvas{
+  background-color: transparent;
+  position:absolute; top:0px; left:0px;
+}
+#myCanvas1{
+    background-color: transparent;
+    position:absolute; top:0px; left:0px;
+    transition: 500ms ease-in;
+  }
+  #myCanvas2{
+    background-color: transparent;
+    position:absolute; top:0px; left:0px;
+    transition: 5s ease-in;
+  }
+#alpha{
+    background-color: transparent;
+    display: block;
+}
+label{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#P{
+    background-color: transparent;
+    color: black;
+    display: block;
+
+}
+.inline{
+    width: 100%;
+    height: 50%;
+    display:inline-block;
+    position: absolute;
+    background-color: black;
+}
+.edge{
+        width: 8px;
+        height: 15px;
+        border-radius: 30%;
+        background-color: white;
+
+}
+.slider {
+    -webkit-appearance: none;
+    width: 25%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    background-color: white;
+  }
+  #P{
+   margin-left: 80px;
+  }
+  #A{
+      margin-top: 120px;
+      margin-right: 90px;
+      padding-right: 10px;
+      margin-left: -15px;
+      display: block;
+  }
+  #Q{
+      display: block;
+      margin-top: -150px;
+      margin-left: 40px;
+  }
+  #C{
+      display: block;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      margin-top: 220px;
+  }
+  #D{
+      display: block;
+      margin-left: 250px;
+      margin-top: -30px;
+  }
+  #B{
+      display: block;
+      margin-left: 305px;
+      margin-top: -10px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #731ad9;
+    border-radius: 50%;
+    cursor: pointer;
+    position: left;
+  }
+#leftbox {
+    margin-top: 11%;
+    margin-left: 37%;
+    float:left; 
+}
+#middlebox{
+    margin-top: 11.3%;
+    float:left; 
+}
+#rightbox{
+    margin-top: 11%;
+    float:left;
+}
